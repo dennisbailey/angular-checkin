@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+  <h1>Earnings</h1>
+  <h2>Tip Total: {{ cumulative.tip | currency }}</h2>
+  <h2>Meal Count: {{ cumulative.count }}</h2>
+  <h2>Average Tip per Meal: {{ (cumulative.tip / cumulative.count) | currency }}</h2>
+  </div>
+</div>

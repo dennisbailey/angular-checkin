@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+          <button class="btn btn-success" ng-click="prev()">Prev</button>
+          <button class="btn btn-success" ng-click="next()">Next</button>
+    
+    <h2>Overview for Meal {{ position }}</h2>
+    <h2>Subtotal: {{ meals[index].price | currency }}</h2>
+    <h2>Tip: {{ meals[index].price * (1 + meals[index].tax) * meals[index].tip | currency }}</h2>
+    <hr>
+    <h2>Total: {{ meals[index].price * (1 + meals[index].tax)  * ( 1 + meals[index].tip) | currency }}</h2>
+  </div>
+</div>
