@@ -33,9 +33,9 @@ app.factory("mealDataService", function () {
       this.meals.push(meal);
       
       // Calculations to update the running totals
-      this.totals.subtotal += parseInt(meal.price);
-      this.totals.tip += parseInt(meal.price * (1 + meal.tax) * meal.tip);
-      this.totals.total = parseInt(meal.price * (1 + meal.tax) * (1 + meal.tip));
+      this.totals.subtotal += parseFloat(meal.price);
+      this.totals.tip += parseFloat(meal.price * (1 + meal.tax) * meal.tip);
+      this.totals.total = parseFloat(meal.price * (1 + meal.tax) * (1 + meal.tip));
       this.totals.count += 1;
     },
     
