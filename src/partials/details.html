@@ -11,7 +11,7 @@
       <div class="form-group" ng-submit="addMeal(meal)">
         <label class="col-md-4 control-label" for="price">Base Meal Price:</label>  
         <div class="col-md-5">
-        <input id="price" name="price" type="number" step="0.01" placeholder="$9.99" class="form-control input-md" ng-model="meal.price">
+        <input id="price" name="price" type="number" step="0.01" placeholder="$9.99" class="form-control input-md" value="{{meal.price | currency }}" ng-model="meal.price">
         </div>
       </div>
       
