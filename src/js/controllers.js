@@ -1,12 +1,12 @@
 app.controller('detailsController', ['$scope', 'mealDataService', function($scope, mealDataService) {
   // Crate a counter for the page
   $scope.counter = mealDataService.totals.count + 1;
-   
+  
   // Add a meal 
   $scope.addMeal = function (meal) {
 
     mealDataService.addMeal(meal);
-
+    
     $scope.meal = {};
     
     $scope.counter += 1;

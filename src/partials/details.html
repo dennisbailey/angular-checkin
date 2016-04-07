@@ -11,7 +11,7 @@
       <div class="form-group" ng-submit="addMeal(meal)">
         <label class="col-md-4 control-label" for="price">Base Meal Price:</label>  
         <div class="col-md-5">
-        <input id="price" name="price" type="text" placeholder="$9.99" class="form-control input-md" ng-model="meal.price">
+        <input id="price" name="price" type="number" step="0.01" placeholder="$9.99" class="form-control input-md" ng-model="meal.price">
         </div>
       </div>
       
@@ -19,7 +19,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="tax">Tax Rate:</label>  
         <div class="col-md-5">
-        <input id="tax" name="tax" type="text" placeholder="8.25%" class="form-control input-md" ng-model="meal.tax">
+        <input id="tax" name="tax" type="number" step="0.001" placeholder=".0825%" class="form-control input-md" ng-model="meal.tax">
         </div>
       </div> 
       
@@ -27,7 +27,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="tip">Tip Percentage:</label>  
         <div class="col-md-5">
-        <input id="tip" name="tip" type="text" placeholder="20%" class="form-control input-md" ng-model="meal.tip">
+        <input id="tip" name="tip" type="number" step="0.05" placeholder="20%" class="form-control input-md" ng-model="meal.tip">
         </div>
       </div> 
       
