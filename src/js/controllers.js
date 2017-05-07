@@ -1,4 +1,5 @@
-app.controller('detailsController', ['$scope', 'mealDataService', function($scope, mealDataService) {
+app.controller('detailsController', ['$scope', 'mealDataService', 
+  function($scope, mealDataService) {
   // Crate a counter for the page
   $scope.counter = mealDataService.totals.count + 1;
   
@@ -15,7 +16,8 @@ app.controller('detailsController', ['$scope', 'mealDataService', function($scop
 }]);
 
 
-app.controller('chargesController', ['$scope', 'mealDataService', function($scope, mealDataService) {
+app.controller('chargesController', ['$scope', 'mealDataService', 
+  function($scope, mealDataService) {
   //Default values
   $scope.position = mealDataService.meals.length;
   $scope.index = $scope.position - 1;
@@ -54,7 +56,8 @@ app.controller('chargesController', ['$scope', 'mealDataService', function($scop
 }]);
 
 
-app.controller('earningsController', ['$scope', 'mealDataService', function($scope, mealDataService) {
+app.controller('earningsController', ['$scope', 'mealDataService', 
+function($scope, mealDataService) {
   
   // Get the totals from the service
   $scope.getTotals = function() {
@@ -66,7 +69,8 @@ app.controller('earningsController', ['$scope', 'mealDataService', function($sco
   
 }]);
 
-app.controller('resetController', ['$scope', 'mealDataService', function($scope, mealDataService) {
+app.controller('resetController', ['$scope', 'mealDataService', 
+function($scope, mealDataService) {
   
   // Empty the meals array and the totals object
   $scope.reset = function() {

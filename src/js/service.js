@@ -11,7 +11,8 @@ app.factory("mealDataService", function () {
            ],
     
     // Object to store running totals
-    totals: { subtotal: 100,
+    totals: { 
+              subtotal: 100,
               tip: 30,
               total: 138.25,
               count: 1
